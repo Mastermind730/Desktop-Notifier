@@ -1,0 +1,67 @@
+import time
+import plyer
+from plyer import notification
+import webbrowser
+from tkinter import messagebox
+a='8:35'>=time.strftime('%H:%M:%S')>='8:30'
+b='9:45'>=time.strftime('%H:%M:%S')>='9:40'
+c='10:55'>=time.strftime('%H:%M:%S')>='10:50'
+d='12:05'>=time.strftime('%H:%M:%S')>='12:00'
+e='13:25'>=time.strftime('%H:%M:%S')>='13:20'
+
+if a:
+    notification.notify(title='Study Time',message='lets study together and create a better future for tomorrow',app_icon='',timeout=10)
+    messagebox.askyesno(title='Study Time',message='You have a class now click  yes to join the class ')
+    if True:
+        subject=input('which class do you have now(English or Maths):')
+        if subject=='english':
+            webbrowser.open('https://us04web.zoom.us/j/3087645148?pwd=Wk12TXo2YWNpWkltNHlYdmNGMk5XZz09')
+        else:
+            webbrowser.open('https://us04web.zoom.us/j/4796192771?pwd=aHBzOTl5cERjVU1iYUpDMXg3YmJWZz09')
+
+        print('you have joined the class successful')
+elif b:
+    notification.notify(title='Study Time',message='lets study together and create a better future for tomorrow',app_icon='',timeout=10)
+    messagebox.askyesno(title='Study Time',message='You have a class now click  yes to join the class ')
+    if True:
+        subject=input('which class do you have (CS or Physics):')
+        if subject=='CS':
+            webbrowser.open('https://us04web.zoom.us/j/5695479354?pwd=RVNrak92R3hPb1RLQitKVCtadHZtUT09')
+            print('you have joined thee class succesfully')
+        else:
+            webbrowser.open('https://us04web.zoom.us/j/4728270497?pwd=OENoTHdrbnJSeUtFcTZnclhqQ09YUT09')
+            print('you have joined the class successfully')
+
+elif c:
+    notification.notify(title='Study Time',message='lets study together and create a better future for tomorrow',app_icon='',timeout=10)
+    messagebox.askyesno(title='Study Time',message='You have a class now click  yes to join the class ')
+    if True:
+        subject = input('which class do you have (English or Physics):')
+        if subject=='english':
+            webbrowser.open('https://us04web.zoom.us/j/3087645148?pwd=Wk12TXo2YWNpWkltNHlYdmNGMk5XZz09')
+        else:
+            webbrowser.open('https://us04web.zoom.us/j/4728270497?pwd=OENoTHdrbnJSeUtFcTZnclhqQ09YUT09')
+
+elif d:
+    notification.notify(title='Study Time',message='lets study together and create a better future for tomorrow',app_icon='',timeout=10)
+    messagebox.askyesno(title='Study Time',message='You have a class now click  yes to join the class ')
+    if True:
+        webbrowser.open('https://us04web.zoom.us/j/73776839146?pwd=N25MU09FRndVY2tQeHB0L1I0VmEyQT09')
+        print('you have joined the chemistry class succesfully')
+
+elif e:
+    notification.notify(title='Study Time',message='lets study together and create a better future for tomorrow',app_icon='',timeout=10)
+    messagebox.askyesno(title='Study Time',message='You have a class now click  yes to join the class ')
+    if True:
+        subject=input('which class do you have now(maths or CS)')
+        if subject=='CS':
+            webbrowser.open('https://us04web.zoom.us/j/5695479354?pwd=RVNrak92R3hPb1RLQitKVCtadHZtUT09')
+            print('you have joined thee class succesfully')
+        else:
+            webbrowser.open('https://us04web.zoom.us/j/4796192771?pwd=aHBzOTl5cERjVU1iYUpDMXg3YmJWZz09')
+            print('you have joined the class succesfully')
+n=1
+if __name__=="__main__":
+    while n!=0:
+        notification.notify(title='Drink water',message='Time to drink water it helps us giving energy and also has many more benefits ',app_icon='',timeout=10)
+        time.sleep(3600)
